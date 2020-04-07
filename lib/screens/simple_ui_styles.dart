@@ -4,13 +4,14 @@ import 'package:flutter/widgets.dart';
 
 import 'package:responsive_ui_fcaroca/shared/shared.dart';
 
-class SimpleUIStyles extends SharedStyles with Sizes {
+class SimpleUIStyles  with Sizes , SharedStyles {
   TextStyle saveButtonTitle;
 
   TextStyle forgetButtonTitle;
 
-  SimpleUIStyles(BuildContext context) {
+  SimpleUIStyles(BuildContext context){
     setDefaultSize(context);
+    sharedStyles();
 
     saveButtonTitle = TextStyle(
       fontFamily: 'Montserrat',
@@ -23,7 +24,7 @@ class SimpleUIStyles extends SharedStyles with Sizes {
     forgetButtonTitle = TextStyle(
       fontFamily: 'Montserrat',
       color: Colors.red,
-      fontSize: sizeP(16),
+      fontSize: sizeP(20),
       //height: sizeH(0.5),
       fontWeight: FontWeight.w600,
     );

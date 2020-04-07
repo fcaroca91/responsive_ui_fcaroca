@@ -1,0 +1,1 @@
+export 'package:responsive_ui_fcaroca/screens/simple_ui_page.dart';

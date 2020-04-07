@@ -29,8 +29,8 @@ class _SimpleUIPageState extends State<SimpleUIPage> with SimpleUIComponents {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               buttonTitleCommon(),
-              buttonTitleChoice("forget"),
-              
+              buttonTitleChoice(null),
+              const ButtonComponent(),
             ]
           ),
         ),

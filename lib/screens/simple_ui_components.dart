@@ -25,9 +25,25 @@ mixin SimpleUIComponents {
   }
 
   Widget buttonTitleCommon() {
-    return Text(
-      'Boton Común',
-      style: styles.titleStyleShared,
+    return RaisedButton(
+        child: Text("apretame", style: styles.titleStyleShared,),
+        onPressed: () => print("RAISED BUTTON PRESSED"),
+      );
+  }
+}
+
+class ButtonComponent extends StatelessWidget {
+  const ButtonComponent({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    SimpleUIStyles styles = SimpleUIStyles(context);
+  
+    return Container(
+      child: RaisedButton(
+        child: Text("apretame", style: styles.titleStyleShared,),
+        onPressed: () => print("RAISED BUTTON PRESSED"),
+      ),
     );
   }
 }

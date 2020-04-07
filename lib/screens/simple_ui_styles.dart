@@ -10,8 +10,9 @@ class SimpleUIStyles  with Sizes , SharedStyles {
   TextStyle forgetButtonTitle;
 
   SimpleUIStyles(BuildContext context){
+    
     setDefaultSize(context);
-    sharedStyles();
+    initSharedStyles();
 
     saveButtonTitle = TextStyle(
       fontFamily: 'Montserrat',
